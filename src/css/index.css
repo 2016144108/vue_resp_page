@@ -1,0 +1,703 @@
+/*@import "./bootstrap.min.css";
+@import "./layui.css";*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+.menu{
+    width: 30px;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    position: relative;
+    margin-left:84%;
+    display: none;
+    top: 10px;
+}
+.menu div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    background: grey;
+    transform: translate(-50%,-50%);
+}
+.header{
+    width: 100%;
+}
+.header_top{
+    width: 100%;
+    height: 50px;
+}
+.inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.logo{
+    width: 100px;
+    height: 100%;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    left: 15%;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+.nav{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 25%;
+}
+.nav ul{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.nav ul li{
+    width: 12%;
+    height: 100%;
+    float: left;
+    text-decoration: none;
+    color: #007bff;
+    text-align: center;
+}
+.nav ul li:hover{
+    background-color: grey;
+}
+.nav ul li:hover a{
+    color: white;
+}
+.nav ul li a{
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+}
+.header_top .content{
+    position: absolute;
+    top: 0;
+    left: 75%;
+    width: 10%;
+    height: 100%;
+}
+.header_top .content img{
+    height: 100%;
+}
+.banner{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.banner img{
+    width: 100%;
+}
+.main{
+    width: 100%;
+}
+.main .digital-data{
+    width: 100%;
+}
+.main .digital-data .dater{
+    width: 100%;
+}
+.main .digital-data .dater .title{
+    margin: 0 auto;
+    text-align: center;
+}
+.main .digital-data .dater .tip{
+    display: block;
+    margin: 20px auto;
+    font-size: 13px;
+    text-align: center;
+    color: grey;
+}
+.main .digital-data .dater .info{
+    width: 40%;
+    margin: 0 auto 40px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+}
+.main .digital-data .dater .content_power{
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+}
+.main .digital-data .dater .content_power div{
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+}
+.main .digital-data .dater .content_power div h3{
+    margin: 0 auto;
+    text-align: center;
+    color: orangered;
+    font-size: 30px;
+}
+.main .digital-data .dater .content_power div h3 label{
+    margin: 0 auto;
+    text-align: center;
+    color: orangered;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 5px;
+}
+.main .digital-data .dater .content_power div span{
+    display: block;
+    margin: 0 auto;
+    color: grey;
+    font-size: 13px;
+    text-align: center;
+}
+.main .digital-frontend{
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-image: url("../assets/wangye_28.jpg");
+}
+.main .digital-frontend .finner{
+    width: 100%;
+}
+.main .digital-frontend .finner .title{
+    width: 100%;
+    margin: 0 auto 20px;
+    text-align: center;
+    color: white;
+}
+.main .digital-frontend .finner .info{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+.main .digital-frontend .finner .join{
+    width: 100px;
+    height: 30px;
+    border: 2px solid white;
+    line-height: 30px;
+    border-radius: 50px;
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+}
+.main .digital-model{
+     width: 100%;
+    padding: 40px 0 20px;
+ }
+.main .digital-model .minner{
+     width: 100%;
+}
+.main .digital-model .minner{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main .digital-model .minner .tip{
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    font-size: 13px;
+    text-align: center;
+    color: grey;
+}
+.main .digital-model .minner .content-model{
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.main .digital-model .minner .content-model .model-box{
+    width: 24%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    height: 200px;
+    float: left;
+}
+.main .digital-model .minner .content-model .model-box .model-bg {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+.main .digital-model .minner .content-model .model-box:nth-of-type(1) .model-bg {
+    background-image: url("../assets/0d310eceb22c4e5386f93c3abf2fb00a.jpg");
+}
+.main .digital-model .minner .content-model .model-box:nth-of-type(2) .model-bg {
+    background-image: url("../assets/1ec809f120064c2c8ee91b725f7751b9.png");
+}
+.main .digital-model .minner .content-model .model-box:nth-of-type(3) .model-bg {
+    background-image: url("../assets/30b1458983ec4e0e951bbe5873dcab56.png");
+}
+.main .digital-model .minner .content-model .model-box:nth-of-type(4) .model-bg {
+    background-image: url("../assets/5699d2747053449d9a0ff4f2d1243536.jpg");
+}
+.main .digital-model .minner .content-model .model-box:nth-of-type(5) .model-bg {
+    background-image: url("../assets/74274e493a9e453f98db135ef60c17af.png");
+}
+.main .digital-model .minner .content-model .model-box:nth-of-type(6) .model-bg {
+    background-image: url("../assets/c71da5a25f6a4d9da119b89f6dfe0284.jpg");
+}
+.main .digital-model .minner .content-model .model-box:nth-of-type(7) .model-bg {
+    background-image: url("../assets/f9267a019a694b848746e3d11950ed45.jpg");
+}
+.main .digital-model .minner .content-model .model-box:nth-of-type(8) .model-bg {
+    background-image: url("../assets/f9267a019a694b848746e3d11950ed45.jpg");
+}
+.main .digital-model .minner .content-model .model-box h3 {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    color: grey;
+    font-weight: normal;
+    font-size: 16px;
+}
+.main .digital-model .minner .content-model .model-box p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: grey;
+    font-weight: normal;
+    font-size: 13px;
+}
+.main .digital-teacher{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.main .digital-teacher .tinner{
+    width: 100%;
+}
+.main .digital-teacher .tinner .title{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main .digital-teacher .tinner .tip{
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    font-size: 13px;
+    text-align: center;
+    color: grey;
+}
+.main .digital-teacher .tinner .teachers{
+    width: 60%;
+    overflow: hidden;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+.main .digital-teacher .tinner .teachers .teacher-box{
+    width: 18%;
+    padding: 10px;
+    margin-right: 10px;
+    height: 250px;
+    float: left;
+    box-sizing: border-box;
+    background: rgba(224, 233, 241, 0.73);
+}
+.main .digital-teacher .tinner .teachers  .teacher-box .img-box{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: -40px auto 0;
+    overflow: hidden;
+}
+.main .digital-teacher .tinner .teachers  .teacher-box .img-box img{
+    width: 100%;
+}
+.main .digital-teacher .tinner .teachers  .teacher-box h3{
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    color: #007bff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.main .digital-teacher .tinner .teachers .teacher-box p{
+    width: 100%;
+    color: grey;
+    text-align: center;
+    font-size: 13px;
+}
+.main .digital-work{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.main .digital-work .winner{
+    width: 100%;
+}
+.main .digital-work .winner .title{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.main .digital-work .winner .tip{
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    font-size: 13px;
+    text-align: center;
+    color: grey;
+}
+.main .digital-work .winner .works{
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.main .digital-work .winner .works .column{
+    width: 255px;
+    height: 550px;
+    float: left;
+    margin-right: 10px;
+}
+.main .digital-work .winner .works .column .img_box{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.main .digital-work .winner .works .column .img_box img{
+    width: 100%;
+}
+.main .digital-work .winner .more{
+    width: 100px;
+    height: 30px;
+    border: 1px solid orangered;
+    line-height: 30px;
+    border-radius: 50px;
+    margin: 5px auto 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+}
+.main .digital-dream{
+    padding: 70px 0;
+    background-image: url("../assets/wangye_28.jpg");
+    width: 100%;
+    margin-bottom: 30px;
+}
+.main .digital-dream .dinner{
+    width: 100%;
+}
+.main .digital-dream .dinner .title{
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+.main .digital-dream .dinner .btn{
+    width: 160px;
+    margin: 20px auto 0;
+    height: 36px;
+    line-height: 36px;
+    text-decoration: none;
+    background: orangered;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.main .digital-company{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.main .digital-company .cinner{
+    width: 100%;
+}
+.main .digital-company .cinner .title{
+    width: 100%;
+    margin: 0 auto;
+    color: orangered;
+    text-align: center;
+}
+.main .digital-company .cinner .tip{
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    font-size: 13px;
+    text-align: center;
+    color: grey;
+}
+.main .digital-company .cinner .info{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: left;
+    text-indent:2em;
+    line-height: 20px;
+}
+.footer-top{
+    width: 100%;
+    background: orangered;
+}
+.footer-top .finner{
+    width: 100%;
+    overflow: hidden;
+    padding: 3px 0;
+}
+.footer-top .finner .pointer{
+    float: left;
+    height: 10px;
+    width: 10px;
+    background: white;
+    margin-left: 180px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+.footer-top .finner p{
+    float: left;
+    color: white;
+    height: 100%;
+    line-height: 21px;
+    font-size: 10px;
+    margin-left: 1%;
+}
+.footer-top .finner a{
+    float: left;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    line-height: 21px;
+    font-size: 10px;
+    margin-left: 48%;
+}
+.footer-inner{
+    width: 100%;
+    background: #312e2f;
+    padding: 30px 0 50px;
+}
+.footer-inner .finner{
+    width: 100%;
+}
+.footer-inner .finner .footer-login{
+    margin-left: 12%;
+}
+.footer-inner .finner .footer-login .logo-box{
+    width: 100px;
+}
+.footer-inner .finner .footer-login .logo-box img{
+    width: 100%;
+}
+.footer-inner .finner .footer-login .logo-right{
+    margin: -60px 0 0 145px;
+}
+.footer-inner .finner .footer-login .logo-right p{
+    color: white;
+    font-size: 10px;
+}
+.footer-inner .finner .footer-login .logo-right a{
+    color: white;
+    background: orangered;
+    text-decoration: none;
+    width: 100px;
+    height: 20px;
+    display: block;
+    line-height: 20px;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.footer-inner .finner .follow{
+    margin-left: 72%;
+}
+.footer-inner .finner .follow span{
+    color: white;
+    display: block;
+    font-size: 10px;
+    margin-top: -40px;
+}
+.footer-inner .finner .follow a{
+    color: white;
+    font-size: 10px;
+    text-decoration: brown;
+    float: left;
+    margin-right: 20px;
+    margin-top: -12px;
+ }
+.footer-inner .finner .follow a:nth-of-type(1){
+    margin-left: 60px;
+}
+.footer-bottom{
+    width: 100%;
+    background: #2c292a;
+    padding: 20px 0;
+}
+.footer-bottom p:nth-of-type(1){
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+.footer-bottom p:nth-of-type(1) a{
+    color: white;
+    float: left;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 10px;
+}
+.footer-bottom p:nth-of-type(2){
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    .header_top .content{
+        position: absolute;
+        top: 0;
+        left: 45%;
+    }
+    .main .digital-data .dater .info{
+        width: 90%;
+        margin: 0 auto 10px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 15px;
+    }
+    .main .digital-data .dater .content_power{
+        margin: 0 auto;
+        width: 70%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .main .digital-data .dater .content_power div{
+        width: 100%;
+        float: left;
+        margin-right: 3%;
+        margin-bottom: 10px;
+    }
+    .main .digital-frontend .finner .info{
+        width: 90%;
+    }
+    .main .digital-model .minner .content-model{
+        width: 80%;
+        overflow: hidden;
+    }
+    .main .digital-model .minner .content-model .model-box{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        height: 200px;
+        float: left;
+    }
+    .main .digital-teacher .tinner .teachers{
+        width: 80%;
+        overflow: hidden;
+        padding-top: 50px;
+        margin: 0 auto;
+    }
+    .main .digital-teacher .tinner .teachers .teacher-box{
+        width: 100%;
+        padding: 10px;
+        margin-right: 10px;
+        height: 250px;
+        float: left;
+        box-sizing: border-box;
+        background-image: linear-gradient(#34a1e5,#1763e5);
+        margin-bottom: 50px;
+    }
+    .main .digital-teacher .tinner .teachers  .teacher-box .img-box{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin: -40px auto 0;
+        overflow: hidden;
+    }
+    .main .digital-teacher .tinner .teachers  .teacher-box h3{
+        width: 100%;
+        font-weight: normal;
+        text-align: center;
+        font-size: 16px;
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .main .digital-teacher .tinner .teachers .teacher-box p{
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-size: 13px;
+    }
+    .main .digital-work .winner .works{
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .main .digital-work .winner .works .column{
+        width: 100%;
+        height: 550px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    .main .digital-work .winner .works .column .img_box{
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .main .digital-company .cinner .info{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 13px;
+        text-align: left;
+        text-indent:2em;
+        line-height: 20px;
+    }
+    .footer-top .finner .pointer{
+        display: none;
+    }
+    .footer-top .finner p{
+        width: 100%;
+        text-align: center;
+        float: none;
+        color: white;
+        height: 100%;
+        line-height: 21px;
+        font-size: 10px;
+        margin-left: 0;
+    }
+    .footer-top .finner a{
+        width: 100%;
+        text-align: center;
+        float: left;
+        color: white;
+        text-decoration: none;
+        height: 100%;
+        line-height: 21px;
+        font-size: 10px;
+        margin-left: 0;
+    }
+    .footer-inner .finner .follow{
+        margin-left: 12%;
+        margin-top: 70px;
+    }
+    .footer-inner{
+        width: 100%;
+        background: #312e2f;
+        padding: 30px 0 20px;
+    }
+}
+
