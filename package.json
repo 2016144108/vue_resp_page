@@ -17,6 +17,9 @@
     "@vue/cli-plugin-router": "~4.4.0",
     "@vue/cli-plugin-vuex": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
+    "jquery": "^3.5.1",
+    "layui": "0.0.1",
+    "react": "^16.13.1",
     "vue-template-compiler": "^2.6.11"
   },
   "browserslist": [
