@@ -3,7 +3,7 @@
         <div class="header_top" id="header_top">
             <div class="inner" id="inner">
                 <h1 class="logo">
-                    <a href="">电脉云</a>
+                    <a href="" id="all" @click.prevent="on">电脉云</a>
                 </h1>
                 <div class="nav">
                     <ul>
@@ -31,9 +31,15 @@
     </div>
 </template>
 
-<script>
+<script type="module">
+    import $ from 'jquery'
     export default {
-        name: "Header"
+        name: "Header",
+        methods:{
+            on(){
+                    alert($('#all').text());
+            }
+        }
     }
 </script>
 
